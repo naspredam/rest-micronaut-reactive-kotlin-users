@@ -25,6 +25,15 @@ Where the endpoints exposed are:
 |GET| /users/{user_id} | Get specific user data |
 |DELETE| /users/{user_id} | Delete specific user data |
 
+## How to run the application
+
+It was created a makefile to help on this, where we have the tasks:
+
+- start: creates the images and up the docker-compose (uping the service and the database)
+- stop: downs the docker-compose (stopping and removing any docker started on the docker-compose)
+- restart: does stop and start
+- logs: shows the log, tailing, of the docker-compose containers that are up (service and database)
+
 ## Default micronaut documentation
 
 ### Feature jdbc-hikari documentation
